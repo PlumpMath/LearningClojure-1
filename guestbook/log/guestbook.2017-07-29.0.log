@@ -1,0 +1,233 @@
+2017-07-29 11:45:33,943 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 11:45:35,265 [main] INFO  guestbook.env - 
+-=[guestbook started successfully using the development profile]=- 
+2017-07-29 11:45:35,467 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-07-29 11:45:35,558 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-07-29 11:45:35,803 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-07-29 11:45:35,805 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-07-29 11:45:35,825 [main] INFO  guestbook.core - #'guestbook.config/env started 
+2017-07-29 11:45:35,826 [main] INFO  guestbook.core - #'guestbook.handler/init-app started 
+2017-07-29 11:45:35,826 [main] INFO  guestbook.core - #'guestbook.core/http-server started 
+2017-07-29 11:45:35,826 [main] INFO  guestbook.core - #'guestbook.core/repl-server started 
+2017-07-29 11:46:02,428 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-07-29 11:46:02,430 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-07-29 11:46:02,436 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-07-29 11:46:02,436 [Thread-2] INFO  guestbook.env - 
+-=[guestbook has shut down successfully]=- 
+2017-07-29 11:46:02,437 [Thread-2] INFO  guestbook.core - #'guestbook.core/repl-server stopped 
+2017-07-29 11:46:02,437 [Thread-2] INFO  guestbook.core - #'guestbook.core/http-server stopped 
+2017-07-29 11:46:02,437 [Thread-2] INFO  guestbook.core - #'guestbook.handler/init-app stopped 
+2017-07-29 11:53:26,084 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 11:53:27,475 [main] INFO  guestbook.env - 
+-=[guestbook started successfully using the development profile]=- 
+2017-07-29 11:53:27,675 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-07-29 11:53:27,801 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-07-29 11:53:28,060 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-07-29 11:53:28,063 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-07-29 11:53:28,090 [main] INFO  guestbook.core - #'guestbook.config/env started 
+2017-07-29 11:53:28,090 [main] INFO  guestbook.core - #'guestbook.handler/init-app started 
+2017-07-29 11:53:28,090 [main] INFO  guestbook.core - #'guestbook.core/http-server started 
+2017-07-29 11:53:28,090 [main] INFO  guestbook.core - #'guestbook.core/repl-server started 
+2017-07-29 12:08:31,923 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:11:45,934 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:12:58,596 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:13:00,092 [main] INFO  guestbook.env - 
+-=[guestbook started successfully using the development profile]=- 
+2017-07-29 12:13:00,267 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-07-29 12:13:00,353 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-07-29 12:13:00,556 [main] ERROR luminus.http-server - server failed to start on port 3000 
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at io.undertow.Undertow.start(Undertow.java:186) ~[undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at org.projectodd.wunderboss.web.undertow.UndertowWeb.start(UndertowWeb.java:83) ~[wunderboss-web-undertow-0.12.2.jar:na]
+	at org.projectodd.wunderboss.web.undertow.UndertowWeb.registerHandler(UndertowWeb.java:143) ~[wunderboss-web-undertow-0.12.2.jar:na]
+	at org.projectodd.wunderboss.web.undertow.UndertowWeb.registerHandler(UndertowWeb.java:124) ~[wunderboss-web-undertow-0.12.2.jar:na]
+	at org.projectodd.wunderboss.web.undertow.UndertowWeb.registerHandler(UndertowWeb.java:68) ~[wunderboss-web-undertow-0.12.2.jar:na]
+	at immutant.web.internal.wunderboss$mount.invokeStatic(wunderboss.clj:79) ~[na:na]
+	at immutant.web.internal.wunderboss$mount.invoke(wunderboss.clj:56) ~[na:na]
+	at immutant.web$run.invokeStatic(web.clj:111) ~[na:na]
+	at immutant.web$run.doInvoke(web.clj:23) ~[na:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:423) [clojure-1.8.0.jar:na]
+	at luminus.http_server$start.invokeStatic(http_server.clj:20) [na:na]
+	at luminus.http_server$start.invoke(http_server.clj:17) [na:na]
+	at guestbook.core$eval14052$fn__14053.invoke(core.clj:19) [na:na]
+	at mount.core$record_BANG_.invokeStatic(core.cljc:86) [na:na]
+	at mount.core$record_BANG_.invoke(core.cljc:85) [na:na]
+	at mount.core$up$fn__100.invoke(core.cljc:93) [na:na]
+	at mount.core$up.invokeStatic(core.cljc:92) [na:na]
+	at mount.core$up.invoke(core.cljc:90) [na:na]
+	at mount.core$bring.invokeStatic(core.cljc:210) [na:na]
+	at mount.core$bring.invoke(core.cljc:202) [na:na]
+	at mount.core$start.invokeStatic(core.cljc:252) [na:na]
+	at mount.core$start.doInvoke(core.cljc:244) [na:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:397) [clojure-1.8.0.jar:na]
+	at mount.core$start_with_args.invokeStatic(core.cljc:350) [na:na]
+	at mount.core$start_with_args.doInvoke(core.cljc:346) [na:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:410) [clojure-1.8.0.jar:na]
+	at guestbook.core$start_app.invokeStatic(core.clj:42) [na:na]
+	at guestbook.core$start_app.invoke(core.clj:41) [na:na]
+	at guestbook.core$_main.invokeStatic(core.clj:57) [na:na]
+	at guestbook.core$_main.doInvoke(core.clj:49) [na:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:397) [clojure-1.8.0.jar:na]
+	at clojure.lang.Var.invoke(Var.java:375) [clojure-1.8.0.jar:na]
+	at user$eval14181.invokeStatic(form-init998247650423043138.clj:1) [na:na]
+	at user$eval14181.invoke(form-init998247650423043138.clj:1) [na:na]
+	at clojure.lang.Compiler.eval(Compiler.java:6927) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.eval(Compiler.java:6917) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.load(Compiler.java:7379) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.loadFile(Compiler.java:7317) [clojure-1.8.0.jar:na]
+	at clojure.main$load_script.invokeStatic(main.clj:275) [clojure-1.8.0.jar:na]
+	at clojure.main$init_opt.invokeStatic(main.clj:277) [clojure-1.8.0.jar:na]
+	at clojure.main$init_opt.invoke(main.clj:277) [clojure-1.8.0.jar:na]
+	at clojure.main$initialize.invokeStatic(main.clj:308) [clojure-1.8.0.jar:na]
+	at clojure.main$null_opt.invokeStatic(main.clj:342) [clojure-1.8.0.jar:na]
+	at clojure.main$null_opt.invoke(main.clj:339) [clojure-1.8.0.jar:na]
+	at clojure.main$main.invokeStatic(main.clj:421) [clojure-1.8.0.jar:na]
+	at clojure.main$main.doInvoke(main.clj:384) [clojure-1.8.0.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:421) [clojure-1.8.0.jar:na]
+	at clojure.lang.Var.invoke(Var.java:383) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.applyToHelper(AFn.java:156) [clojure-1.8.0.jar:na]
+	at clojure.lang.Var.applyTo(Var.java:700) [clojure-1.8.0.jar:na]
+	at clojure.main.main(main.java:37) [clojure-1.8.0.jar:na]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_101]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:190) ~[xnio-nio-3.3.6.Final.jar:3.3.6.Final]
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243) ~[xnio-api-3.3.6.Final.jar:3.3.6.Final]
+	at io.undertow.Undertow.start(Undertow.java:142) ~[undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	... 50 common frames omitted
+2017-07-29 12:13:13,052 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-07-29 12:13:13,059 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-07-29 12:13:13,068 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-07-29 12:13:13,069 [Thread-2] INFO  guestbook.env - 
+-=[guestbook has shut down successfully]=- 
+2017-07-29 12:13:13,070 [Thread-2] INFO  guestbook.core - #'guestbook.core/repl-server stopped 
+2017-07-29 12:13:13,071 [Thread-2] INFO  guestbook.core - #'guestbook.core/http-server stopped 
+2017-07-29 12:13:13,071 [Thread-2] INFO  guestbook.core - #'guestbook.handler/init-app stopped 
+2017-07-29 12:13:41,982 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:20:36,170 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:21:03,424 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:21:04,745 [main] INFO  guestbook.env - 
+-=[guestbook started successfully using the development profile]=- 
+2017-07-29 12:21:04,902 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-07-29 12:21:04,989 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-07-29 12:21:05,213 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-07-29 12:21:05,216 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-07-29 12:21:05,244 [main] INFO  guestbook.core - #'guestbook.config/env started 
+2017-07-29 12:21:05,244 [main] INFO  guestbook.core - #'guestbook.handler/init-app started 
+2017-07-29 12:21:05,244 [main] INFO  guestbook.core - #'guestbook.core/http-server started 
+2017-07-29 12:21:05,245 [main] INFO  guestbook.core - #'guestbook.core/repl-server started 
+2017-07-29 12:21:20,878 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-07-29 12:21:20,881 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-07-29 12:21:20,887 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-07-29 12:21:20,887 [Thread-2] INFO  guestbook.env - 
+-=[guestbook has shut down successfully]=- 
+2017-07-29 12:21:20,888 [Thread-2] INFO  guestbook.core - #'guestbook.core/repl-server stopped 
+2017-07-29 12:21:20,888 [Thread-2] INFO  guestbook.core - #'guestbook.core/http-server stopped 
+2017-07-29 12:21:20,889 [Thread-2] INFO  guestbook.core - #'guestbook.handler/init-app stopped 
+2017-07-29 12:22:27,561 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:22:28,897 [main] INFO  migratus.core - Starting migrations 
+2017-07-29 12:22:29,067 [main] ERROR migratus.database - Error creating DB connection for postgresql://localhost/guestbook_dev?user=root 
+org.postgresql.util.PSQLException: FATAL: role "root" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2412) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2538) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:122) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:227) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.Driver.makeConnection(Driver.java:431) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.Driver.connect(Driver.java:247) ~[postgresql-42.0.0.jar:42.0.0]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[na:1.8.0_101]
+	at java.sql.DriverManager.getConnection(DriverManager.java:208) ~[na:1.8.0_101]
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:272) ~[na:na]
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:193) ~[na:na]
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:256) ~[na:na]
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:193) ~[na:na]
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:259) ~[na:na]
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:193) ~[na:na]
+	at migratus.database$connect_STAR_$fn__13655.invoke(database.clj:108) ~[na:na]
+	at migratus.database$connect_STAR_.invokeStatic(database.clj:107) [na:na]
+	at migratus.database$connect_STAR_.invoke(database.clj:105) [na:na]
+	at migratus.database.Database.connect(database.clj:193) [na:na]
+	at migratus.core$run.invokeStatic(core.clj:24) [na:na]
+	at migratus.core$run.invoke(core.clj:21) [na:na]
+	at migratus.core$migrate.invokeStatic(core.clj:69) [na:na]
+	at migratus.core$migrate.invoke(core.clj:66) [na:na]
+	at user$eval14183.invokeStatic(form-init5329958620848548027.clj:1) [na:na]
+	at user$eval14183.invoke(form-init5329958620848548027.clj:1) [na:na]
+	at clojure.lang.Compiler.eval(Compiler.java:6927) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.eval(Compiler.java:6917) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.load(Compiler.java:7379) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.loadFile(Compiler.java:7317) [clojure-1.8.0.jar:na]
+	at clojure.main$load_script.invokeStatic(main.clj:275) [clojure-1.8.0.jar:na]
+	at clojure.main$init_opt.invokeStatic(main.clj:277) [clojure-1.8.0.jar:na]
+	at clojure.main$init_opt.invoke(main.clj:277) [clojure-1.8.0.jar:na]
+	at clojure.main$initialize.invokeStatic(main.clj:308) [clojure-1.8.0.jar:na]
+	at clojure.main$null_opt.invokeStatic(main.clj:342) [clojure-1.8.0.jar:na]
+	at clojure.main$null_opt.invoke(main.clj:339) [clojure-1.8.0.jar:na]
+	at clojure.main$main.invokeStatic(main.clj:421) [clojure-1.8.0.jar:na]
+	at clojure.main$main.doInvoke(main.clj:384) [clojure-1.8.0.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:421) [clojure-1.8.0.jar:na]
+	at clojure.lang.Var.invoke(Var.java:383) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.applyToHelper(AFn.java:156) [clojure-1.8.0.jar:na]
+	at clojure.lang.Var.applyTo(Var.java:700) [clojure-1.8.0.jar:na]
+	at clojure.main.main(main.java:37) [clojure-1.8.0.jar:na]
+2017-07-29 12:22:29,069 [main] INFO  migratus.core - Ending migrations 
+2017-07-29 12:24:35,253 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:24:36,545 [main] INFO  migratus.core - Starting migrations 
+2017-07-29 12:24:36,687 [main] ERROR migratus.database - Error creating DB connection for postgresql://localhost/guestbook_dev?user=root 
+org.postgresql.util.PSQLException: FATAL: role "root" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2412) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2538) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:122) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:227) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.Driver.makeConnection(Driver.java:431) ~[postgresql-42.0.0.jar:42.0.0]
+	at org.postgresql.Driver.connect(Driver.java:247) ~[postgresql-42.0.0.jar:42.0.0]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[na:1.8.0_101]
+	at java.sql.DriverManager.getConnection(DriverManager.java:208) ~[na:1.8.0_101]
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:272) ~[na:na]
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:193) ~[na:na]
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:256) ~[na:na]
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:193) ~[na:na]
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:259) ~[na:na]
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:193) ~[na:na]
+	at migratus.database$connect_STAR_$fn__13655.invoke(database.clj:108) ~[na:na]
+	at migratus.database$connect_STAR_.invokeStatic(database.clj:107) [na:na]
+	at migratus.database$connect_STAR_.invoke(database.clj:105) [na:na]
+	at migratus.database.Database.connect(database.clj:193) [na:na]
+	at migratus.core$run.invokeStatic(core.clj:24) [na:na]
+	at migratus.core$run.invoke(core.clj:21) [na:na]
+	at migratus.core$migrate.invokeStatic(core.clj:69) [na:na]
+	at migratus.core$migrate.invoke(core.clj:66) [na:na]
+	at user$eval14183.invokeStatic(form-init1282300740489587007.clj:1) [na:na]
+	at user$eval14183.invoke(form-init1282300740489587007.clj:1) [na:na]
+	at clojure.lang.Compiler.eval(Compiler.java:6927) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.eval(Compiler.java:6917) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.load(Compiler.java:7379) [clojure-1.8.0.jar:na]
+	at clojure.lang.Compiler.loadFile(Compiler.java:7317) [clojure-1.8.0.jar:na]
+	at clojure.main$load_script.invokeStatic(main.clj:275) [clojure-1.8.0.jar:na]
+	at clojure.main$init_opt.invokeStatic(main.clj:277) [clojure-1.8.0.jar:na]
+	at clojure.main$init_opt.invoke(main.clj:277) [clojure-1.8.0.jar:na]
+	at clojure.main$initialize.invokeStatic(main.clj:308) [clojure-1.8.0.jar:na]
+	at clojure.main$null_opt.invokeStatic(main.clj:342) [clojure-1.8.0.jar:na]
+	at clojure.main$null_opt.invoke(main.clj:339) [clojure-1.8.0.jar:na]
+	at clojure.main$main.invokeStatic(main.clj:421) [clojure-1.8.0.jar:na]
+	at clojure.main$main.doInvoke(main.clj:384) [clojure-1.8.0.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:421) [clojure-1.8.0.jar:na]
+	at clojure.lang.Var.invoke(Var.java:383) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.applyToHelper(AFn.java:156) [clojure-1.8.0.jar:na]
+	at clojure.lang.Var.applyTo(Var.java:700) [clojure-1.8.0.jar:na]
+	at clojure.main.main(main.java:37) [clojure-1.8.0.jar:na]
+2017-07-29 12:24:36,688 [main] INFO  migratus.core - Ending migrations 
+2017-07-29 12:25:41,552 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-07-29 12:25:42,827 [main] INFO  migratus.core - Starting migrations 
+2017-07-29 12:25:43,150 [main] INFO  migratus.core - Running up for [20170517234051] 
+2017-07-29 12:25:43,152 [main] INFO  migratus.core - Up 20170517234051-guestbook 
+2017-07-29 12:25:43,238 [main] DEBUG migratus.migration.sql - found 1 up migrations 
+2017-07-29 12:25:43,348 [main] DEBUG migratus.database - marking 20170517234051 complete 
+2017-07-29 12:25:43,409 [main] INFO  migratus.core - Ending migrations 
+2017-07-29 12:26:25,258 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 

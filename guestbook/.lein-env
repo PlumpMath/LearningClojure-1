@@ -1,0 +1,1 @@
+{:database-url (str (System/getenv "CLJ_DB") "://localhost/guestbook_dev?user=" (System/getenv "CLJ_DB_USER"))}

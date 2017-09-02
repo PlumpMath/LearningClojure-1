@@ -1,23 +1,8 @@
-2017-08-05 11:47:43,326 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
-2017-08-05 11:50:24,945 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
-2017-08-05 11:51:20,676 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
-2017-08-05 11:51:44,401 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
-2017-08-05 11:54:47,049 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
-2017-08-05 11:54:48,567 [main] INFO  guestbook.env - 
--=[guestbook started successfully using the development profile]=- 
-2017-08-05 11:54:48,710 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
-2017-08-05 11:54:48,812 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
-2017-08-05 11:54:49,203 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
-2017-08-05 11:54:49,205 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
-2017-08-05 11:54:49,244 [main] INFO  guestbook.core - #'guestbook.config/env started 
-2017-08-05 11:54:49,245 [main] INFO  guestbook.core - #'guestbook.handler/init-app started 
-2017-08-05 11:54:49,245 [main] INFO  guestbook.core - #'guestbook.core/http-server started 
-2017-08-05 11:54:49,245 [main] INFO  guestbook.core - #'guestbook.core/repl-server started 
-2017-08-05 12:07:08,829 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
-2017-08-05 12:07:08,836 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
-2017-08-05 12:07:08,844 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
-2017-08-05 12:07:08,845 [Thread-2] INFO  guestbook.env - 
--=[guestbook has shut down successfully]=- 
-2017-08-05 12:07:08,847 [Thread-2] INFO  guestbook.core - #'guestbook.core/repl-server stopped 
-2017-08-05 12:07:08,848 [Thread-2] INFO  guestbook.core - #'guestbook.core/http-server stopped 
-2017-08-05 12:07:08,848 [Thread-2] INFO  guestbook.core - #'guestbook.handler/init-app stopped 
+2017-09-02 11:48:39,733 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-09-02 11:52:34,812 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-09-02 12:00:59,336 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-09-02 12:05:11,323 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-09-02 12:08:49,274 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-09-02 12:10:41,267 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-09-02 12:20:11,046 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-09-02 12:22:00,607 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
